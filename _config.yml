@@ -86,7 +86,7 @@ author:
   location         :
   employer         : # ""
   pubmed           : 
-  googlescholar    : 
+  googlescholar    : "https://scholar.google.com/citations?user=MBfsqGgAAAAJ"
   email            : "barbara.ikica@gmail.com"
   researchgate     : "https://www.researchgate.net/profile/Barbara_Ikica" # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
