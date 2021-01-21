@@ -7,53 +7,128 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+<link rel="shortcut icon" type="image/png" href="{{ "/images/logo.png" | prepend: site.baseurl }}" >
 
-Education
-======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+<html>
+<head>
+<style>
+  .descr {
+      color: gray;
+  }
 
-Work experience
-======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+  .black {
+      color: black;
+  }
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+#container {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+#only {
+    background-color: #f5f5f5;
+    border: none;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    width: 1000px;
+    float: left;
+    padding: 5px;
+    margin-top : 5px;
+    margin-bottom: 5px;
+}
+
+ul, p{
+  margin:auto;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+li {color:gray; }
+
+</style>
+</head>
+</html>
+
+<!-- {% include base_path %} -->
+
+<br>
+
+# Education
+
+- <span class="black">2015--2019 **PhD in Mathematics** at the University of Ljubljana, Slovenia</span>\
+Thesis: <a target="_blank" rel="noopener noreferrer" href="/publications/#PhD">Evolutionary Dynamics on Evolving Graphs</a>
+
+- <span class="black">2011--2015 **Master of Mathematics** at the University of Ljubljana, Slovenia</span>\
+Thesis: <a target="_blank" rel="noopener noreferrer" href="/publications/#MSc">Evolutionary Dynamics, Games and Graphs</a> (awarded the Prešeren Award for students)
+
+<iframe src="/talkmap/map.html" height="200" width="1000" style="border:none;"></iframe>
+
+<br>
+
+# Work experience <img src="/images/work.png" width="35">
+
+<div id="container">
+  <div id="only">
+  2020–present <b>Postdoctoral Researcher</b> at the University of Zürich, Switzerland (<a target="_blank" rel="noopener noreferrer" href="https://www.nax.science/">Prof. Heinrich Nax</a>)
+  </div>
+</div>
+Experimental game theory, econometric and statistical analysis of data:
+<ul>
+<li>Analysed more than a 100 <em>experimental double-auction markets</em> with more than 80,000 individual bids and asks from both a macro and a micro perspective to gain insight into what drives the asymmetry in convergence to competitive equilibria (<a target="_blank" rel="noopener noreferrer" href="/publications/#trading">paper</a>),</li>
+<li>Examined almost 20,000 individual actions in more than 50 experimental sessions implementing various <em>contribution games under different feedback treatments</em> to shed light on how individuals make decisions and learn as the game progresses (<a target="_blank" rel="noopener noreferrer" href="/publications/#BB">paper</a>).</li>
+</ul>
+
+<div id="container">
+  <div id="only">
+  2015–2019 <b>Young Researcher</b> at the University of Ljubljana, Slovenia (<a target="_blank" rel="noopener noreferrer" href="https://www.fmf.uni-lj.si/~konvalinka/">Prof. Matjaž Konvalinka</a>)
+  </div>
+</div>
+Evolutionary game theory, graph theory, programming, agent-based modelling:
+<ul>
+<li>Worked on <em>extremal problems in chemical graph theory</em> (papers: <a target="_blank" rel="noopener noreferrer" href="/publications/#ABC">ABC index</a>, <a target="_blank" rel="noopener noreferrer" href="/publications/#GG">GG index</a>, (<a target="_blank" rel="noopener noreferrer" href="/publications/#extWiener">external</a>) <a target="_blank" rel="noopener noreferrer" href="/publications/#Wiener">Wiener index</a>),</li>
+<li>Developed and programmed a novel <em>clustering algorithm</em> (papers: <a target="_blank" rel="noopener noreferrer" href="/publications/#mPW">mPW algorithm</a>, see also an <a target="_blank" rel="noopener noreferrer" href="/publications/#CDC">extended version</a>),</li>
+<li>Designed and implemented an agent-based model of <em>co‐evolution of the multilayer news flow</em> (<a target="_blank" rel="noopener noreferrer" href="/publications/#NewsFlow">paper</a>).</li>
+</ul>
+
+<div id="container">
+  <div id="only">
+  2012 <b>Research internship</b> at the <a target="_blank" rel="noopener noreferrer" href="https://ailab.ijs.si/">Artificial Intelligence Laboratory</a>, Jožef Stefan Institute, Slovenia (<a target="_blank" rel="noopener noreferrer" href="https://ailab.ijs.si/marko_grobelnik/">Marko Grobelnik</a>)
+  </div>
+</div>
+<span class="descr">Developed and implemented (in C#) an algorithm for <em>drawing large networks</em> using divisive hierarchical $k$-means, diffusion kernels on graphs, and random projections (<a target="_blank" rel="noopener noreferrer" href="/talks/#IJS">presentation</a>).</span>
+
+<br>
+
+# Research visits <img src="/images/visit.png" width="40">
+<div id="container">
+  <div id="only">
+  2018 & 2019 <a target="_blank" rel="noopener noreferrer" href="http://www.coss.ethz.ch/">COSS</a>, <b>ETH Zürich</b>, Switzerland (<a target="_blank" rel="noopener noreferrer" href="https://coss.ethz.ch/people/helbing.html">Prof. Dirk Helbing</a>)
+  </div>
+</div>
+<span class="descr"><u>Projects:</u></span>
+<ul>
+<li>modelling the <em>news flow</em> from the mass media to the population and across it,</li>
+<li>analysing <em>price convergence</em> towards competitive equilibria in experimental double-auction markets under the Walrasian mechanism, with a particular emphasis on the impact of the order-book feedback.</li>
+</ul>
+
+<div id="container">
+  <div id="only">
+  2018 <a target="_blank" rel="noopener noreferrer" href="https://snap.stanford.edu/">SNAP</a>, <b>Stanford University</b>, United States (<a target="_blank" rel="noopener noreferrer" href="https://cs.stanford.edu/~jure/">Prof. Jure Leskovec</a>)
+  </div>
+</div>
+<span class="descr"><u>Projects:</u></span>
+<ul>
+<li>analysing the <em>dynamics of financial transactions</em> (the data covered nearly 3,000,000 transactions between companies and financial institutions over a decade, balance sheets, bankruptcy information, and macroeconomic indicators),</li>
+<li><em>detecting faulty sensors and spikes in radiation levels</em> (multivariate spatio-temporal data with battery, location, velocity, temperature, and radiation readings of more than a thousand 4,096-channel gamma-ray and neutron detection sensors).</li>
+</ul>
+
+<div id="container">
+  <div id="only">
+  2015 Department of Mathematics, <b>University of Washington</b>, United States (<a target="_blank" rel="noopener noreferrer" href="https://sites.math.washington.edu/~billey/">Prof. Sara Billey</a>)
+  </div>
+</div>
+<span class="descr"><u>Project:</u></span>
+<ul>
+<li>theoretically investigating <em>Higman's conjecture</em> on the number of conjugacy classes of the group $U_n(\mathbb{F}_q)$ of $n \times n$ upper triangular matrices over the field $\mathbb{F}_q$.</li>
+</ul>

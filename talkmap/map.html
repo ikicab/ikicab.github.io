@@ -1,45 +1,219 @@
-
-    <!DOCTYPE html>
-    <html>
-    <head>
-    	<title>Leaflet debug page</title>
-
-    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0-beta.2/leaflet.css" />
-    	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0-beta.2/leaflet.js"></script>
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<link rel="stylesheet" href="leaflet_dist/screen.css" />
-
-    	<link rel="stylesheet" href="leaflet_dist/MarkerCluster.css" />
-    	<link rel="stylesheet" href="leaflet_dist/MarkerCluster.Default.css" />
-    	<script src="leaflet_dist/leaflet.markercluster-src.js"></script>
-    	<script src="org-locations.js"></script>
-
-    </head>
-    <body>
-
-    	<div id="map"></div>
-    	<span>Mouse over a cluster to see the bounds of its children and click a cluster to zoom to those bounds</span>
-    	<script type="text/javascript">
-    		var tiles = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
-              maxZoom: 18,
-              attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012'
-                    }),
-    			latlng = L.latLng(30, 10);
-    		var map = L.map('map', {center: latlng, zoom: 0.7, layers: [tiles]});
-    		var markers = L.markerClusterGroup({
-    			showCoverageOnHover: false,
-    			maxClusterRadius: 80
-    			});
-    		for (var i = 0; i < addressPoints.length; i++) {
-    			var a = addressPoints[i];
-    			var title = a[0];
-    			var marker = L.marker(new L.LatLng(a[1], a[2]), { title: title });
-    			marker.bindPopup(title);
-    			markers.addLayer(marker);
-    		}
-    		map.addLayer(markers);
-    		map.zoomIn();
-    	</script>
-    </body>
-    </html>
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9630f8296e5c42c2be59dc1bfdd88b21 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_9630f8296e5c42c2be59dc1bfdd88b21" ></div>
+        
+</body>
+<script>    
+    
+            var map_9630f8296e5c42c2be59dc1bfdd88b21 = L.map(
+                "map_9630f8296e5c42c2be59dc1bfdd88b21",
+                {
+                    center: [0, 0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 1,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ab5847b7a69b4def8b9ab88cec7bbf2c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9630f8296e5c42c2be59dc1bfdd88b21);
+        
+    
+            var marker_20bbaa635b9940bfba9e405e287aba26 = L.marker(
+                [37.431313849999995, -122.16936535498309],
+                {}
+            ).addTo(map_9630f8296e5c42c2be59dc1bfdd88b21);
+        
+    
+            var icon_20045eb434914e4bbac438b950b1bc19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_20bbaa635b9940bfba9e405e287aba26.setIcon(icon_20045eb434914e4bbac438b950b1bc19);
+        
+    
+        var popup_800d1c08581a47f18b8dd7e903de1358 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_19632f0837ee4bc880932c8932bdd27f = $(`<div id="html_19632f0837ee4bc880932c8932bdd27f" style="width: 100.0%; height: 100.0%;">Stanford University, 2018</div>`)[0];
+            popup_800d1c08581a47f18b8dd7e903de1358.setContent(html_19632f0837ee4bc880932c8932bdd27f);
+        
+
+        marker_20bbaa635b9940bfba9e405e287aba26.bindPopup(popup_800d1c08581a47f18b8dd7e903de1358)
+        ;
+
+        
+    
+    
+            var marker_546adefe7ec3438a9b8b5bb09bef6d94 = L.marker(
+                [47.6543238, -122.30800894320257],
+                {}
+            ).addTo(map_9630f8296e5c42c2be59dc1bfdd88b21);
+        
+    
+            var icon_82dcba92b9024d259ffdba8c2e225f9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_546adefe7ec3438a9b8b5bb09bef6d94.setIcon(icon_82dcba92b9024d259ffdba8c2e225f9f);
+        
+    
+        var popup_968592da3ece403792e739ffdba290a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d354c47119184ec3afae594c0f2e16cb = $(`<div id="html_d354c47119184ec3afae594c0f2e16cb" style="width: 100.0%; height: 100.0%;">University of Washington, 2015</div>`)[0];
+            popup_968592da3ece403792e739ffdba290a4.setContent(html_d354c47119184ec3afae594c0f2e16cb);
+        
+
+        marker_546adefe7ec3438a9b8b5bb09bef6d94.bindPopup(popup_968592da3ece403792e739ffdba290a4)
+        ;
+
+        
+    
+    
+            var marker_08d460ed52ff4250adb9204d6d3b449a = L.marker(
+                [47.3773269, 8.5475089],
+                {}
+            ).addTo(map_9630f8296e5c42c2be59dc1bfdd88b21);
+        
+    
+            var icon_f865fb4776364e93bf4c9c63c204a55d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_08d460ed52ff4250adb9204d6d3b449a.setIcon(icon_f865fb4776364e93bf4c9c63c204a55d);
+        
+    
+        var popup_4afde90ecf84498e8a6866d8f5986ddf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_83254be5e9fd4da0b984667e3f2735ef = $(`<div id="html_83254be5e9fd4da0b984667e3f2735ef" style="width: 100.0%; height: 100.0%;">ETH Zürich, 2018 \& 2019</div>`)[0];
+            popup_4afde90ecf84498e8a6866d8f5986ddf.setContent(html_83254be5e9fd4da0b984667e3f2735ef);
+        
+
+        marker_08d460ed52ff4250adb9204d6d3b449a.bindPopup(popup_4afde90ecf84498e8a6866d8f5986ddf)
+        ;
+
+        
+    
+    
+            var marker_20fec2b626b444fa81314f7b9f3eedf3 = L.marker(
+                [46.042252, 14.4905561],
+                {}
+            ).addTo(map_9630f8296e5c42c2be59dc1bfdd88b21);
+        
+    
+            var icon_591922e23ad641daa866fd8a43ff307e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "briefcase", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_20fec2b626b444fa81314f7b9f3eedf3.setIcon(icon_591922e23ad641daa866fd8a43ff307e);
+        
+    
+        var popup_8407dc3da7274fbe9d28c8e4653d42fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6a9c4c6d091490eaadd1d81088cd9e4 = $(`<div id="html_d6a9c4c6d091490eaadd1d81088cd9e4" style="width: 100.0%; height: 100.0%;">University of Ljubljana</div>`)[0];
+            popup_8407dc3da7274fbe9d28c8e4653d42fa.setContent(html_d6a9c4c6d091490eaadd1d81088cd9e4);
+        
+
+        marker_20fec2b626b444fa81314f7b9f3eedf3.bindPopup(popup_8407dc3da7274fbe9d28c8e4653d42fa)
+        ;
+
+        
+    
+    
+            var marker_aca0086e91e24b23888c5d7066b889e3 = L.marker(
+                [46.04215055, 14.488205663483761],
+                {}
+            ).addTo(map_9630f8296e5c42c2be59dc1bfdd88b21);
+        
+    
+            var icon_7e4a8abcfcd64b95bf7b1ef148a5be34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "briefcase", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_aca0086e91e24b23888c5d7066b889e3.setIcon(icon_7e4a8abcfcd64b95bf7b1ef148a5be34);
+        
+    
+        var popup_439973740aeb4cfa98836ee9d8ff1e86 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01729b3c1944455a9937245c371085e3 = $(`<div id="html_01729b3c1944455a9937245c371085e3" style="width: 100.0%; height: 100.0%;">Jožef Stefan Institute, 2012</div>`)[0];
+            popup_439973740aeb4cfa98836ee9d8ff1e86.setContent(html_01729b3c1944455a9937245c371085e3);
+        
+
+        marker_aca0086e91e24b23888c5d7066b889e3.bindPopup(popup_439973740aeb4cfa98836ee9d8ff1e86)
+        ;
+
+        
+    
+    
+            var marker_7864d730b2424046b76dbf8b6e307114 = L.marker(
+                [47.3739351, 8.551061422763539],
+                {}
+            ).addTo(map_9630f8296e5c42c2be59dc1bfdd88b21);
+        
+    
+            var icon_b2988db9025d4f378d4e48bf9337c854 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "briefcase", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7864d730b2424046b76dbf8b6e307114.setIcon(icon_b2988db9025d4f378d4e48bf9337c854);
+        
+    
+        var popup_0252865c48a845c180ff15a9b63ea5ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d042ffd8043c48e2a7828542c6a0456d = $(`<div id="html_d042ffd8043c48e2a7828542c6a0456d" style="width: 100.0%; height: 100.0%;">University of Zürich</div>`)[0];
+            popup_0252865c48a845c180ff15a9b63ea5ab.setContent(html_d042ffd8043c48e2a7828542c6a0456d);
+        
+
+        marker_7864d730b2424046b76dbf8b6e307114.bindPopup(popup_0252865c48a845c180ff15a9b63ea5ab)
+        ;
+
+        
+    
+    
+            map_9630f8296e5c42c2be59dc1bfdd88b21.fitBounds(
+                [[27.431313849999995, -132.16936535498309], [57.6543238, 18.55106142276354]],
+                {}
+            );
+        
+</script>
