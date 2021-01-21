@@ -37,7 +37,7 @@ Lack of Knowledge_. <a target="_blank" rel="noopener noreferrer" href="https://p
 
 ## In progress
 
-- <a name="BB"></a>**B. Ikica**, P. Jiao, A. Masiliūnas, H. H. Nax, _From Skinner Box experiments to Black Box games: radical behaviorism for experimental game theory_. <a target="_blank" rel="noopener noreferrer" href="https://osf.io/4n295/"><img src="/images/OSF.png" width="23">OSF</a>, <a target="_blank" rel="noopener noreferrer" href="https://6290004f-fc84-4e36-9af7-1369d365797a.filesusr.com/ugd/834418_7f988f94ac684b969f5451b32f0b4049.pdf"><img src="/images/talk.png" width="23">presentation slides</a>.
+- <a name="BB"></a>**B. Ikica**, P. Jiao, A. Masiliūnas, H. H. Nax, _From Skinner Box experiments to Black Box games: radical behaviorism for experimental game theory_. <a target="_blank" rel="noopener noreferrer" href="https://osf.io/4n295/"><img src="/images/OSF.png" width="23">OSF</a>, <a target="_blank" rel="noopener noreferrer" href="/talks/#Skinner_to_BB"><img src="/images/talk.png" width="23">presentation slides</a>.
 - <a name="NewsFlow"></a>**B. Ikica**, _Co‐evolution of the Multilayer News Flow_. <a target="_blank" rel="noopener noreferrer" href="https://repozitorij.uni-lj.si/IzpisGradiva.php?id=113311&lang=eng"><img src="/images/paper.png" width="18">Draft (refer to pages 161–199)</a>, <a target="_blank" rel="noopener noreferrer" href="https://github.com/ikicab/NewsFlow"><img src="/images/GitHub.png" width="23">GitHub</a>.
 
 <br>
