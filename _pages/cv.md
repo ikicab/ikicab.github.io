@@ -101,6 +101,17 @@ Evolutionary game theory, graph theory, programming, agent-based modelling:
 <br>
 
 # Research visits <img src="/images/visit.png" width="40">
+
+<div id="container">
+  <div id="only">
+  2021 <em>(forthcoming)</em> <a target="_blank" rel="noopener noreferrer" href="https://www.turing.ac.uk/"><b>The Alan Turing Institute</b></a>, United Kingdom <em>(hosted remotely due to COVID-19)</em>
+  </div>
+</div>
+<span class="descr">Selected to take part in the <a target="_blank" rel="noopener noreferrer" href="https://www.turing.ac.uk/events/reinforcement-learning-study-group-february-2021">Reinforcement Learning Study Group</a>. The study group will bring together organisations from industry, government, and the third sector, with highly talented, carefully selected researchers from academia to tackle a particular real-world problem by engineering data science solutions with an emphasis on reinforcement learning approaches.
+</span>
+
+<br>
+
 <div id="container">
   <div id="only">
   2018 & 2019 <a target="_blank" rel="noopener noreferrer" href="http://www.coss.ethz.ch/">COSS</a>, <b>ETH Zürich</b>, Switzerland (<a target="_blank" rel="noopener noreferrer" href="https://coss.ethz.ch/people/helbing.html">Prof. Dirk Helbing</a>)
