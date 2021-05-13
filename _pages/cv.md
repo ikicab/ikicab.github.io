@@ -70,7 +70,7 @@ Thesis: <a target="_blank" rel="noopener noreferrer" href="/publications/#MSc">E
 
 <div id="container">
   <div id="only">
-  2020–present <b>Postdoctoral Researcher</b> at the University of Zürich, Switzerland (<a target="_blank" rel="noopener noreferrer" href="https://www.nax.science/">Prof. Heinrich Nax</a>)
+  2020–2021 <b>Postdoctoral Researcher</b> at the University of Zürich, Switzerland (<a target="_blank" rel="noopener noreferrer" href="https://www.nax.science/">Prof. Heinrich Nax</a>)
   </div>
 </div>
 Experimental game theory, econometric and statistical analysis of data:
@@ -104,10 +104,10 @@ Evolutionary game theory, graph theory, programming, agent-based modelling:
 
 <div id="container">
   <div id="only">
-  2021 <em>(forthcoming)</em> <a target="_blank" rel="noopener noreferrer" href="https://www.turing.ac.uk/"><b>The Alan Turing Institute</b></a>, United Kingdom <em>(hosted remotely due to COVID-19)</em>
+  2021 <a target="_blank" rel="noopener noreferrer" href="https://www.turing.ac.uk/"><b>The Alan Turing Institute</b></a>, United Kingdom <em>(hosted remotely due to COVID-19)</em>
   </div>
 </div>
-<span class="descr">Selected to take part in the <a target="_blank" rel="noopener noreferrer" href="https://www.turing.ac.uk/events/reinforcement-learning-study-group-february-2021">Reinforcement Learning Study Group</a>. The study group will bring together organisations from industry, government, and the third sector, with highly talented, carefully selected researchers from academia to tackle a particular real-world problem by engineering data science solutions with an emphasis on reinforcement learning approaches.
+<span class="descr">Selected to take part in the <a target="_blank" rel="noopener noreferrer" href="https://www.turing.ac.uk/events/reinforcement-learning-study-group-february-2021">Reinforcement Learning Study Group</a>. The study group brought together organisations from industry, government, and the third sector, with highly talented, carefully selected researchers from academia to tackle a given real‐world problem by engineering data science solutions with an emphasis on reinforcement learning approaches. Specifically, I investigated how to efficiently combine graph neural networks with actor‐critic reinforcement learning to develop a robust model.
 </span>
 
 <br>
